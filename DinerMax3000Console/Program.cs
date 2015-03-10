@@ -31,6 +31,9 @@ namespace DinerMax3000Console
             {
                 guestOrder.Items.Add(drink);
             }
+
+            Console.WriteLine("The order total is " + guestOrder.Total);
+            Console.ReadKey();
         }
     }
 }
