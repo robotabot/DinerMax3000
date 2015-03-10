@@ -12,11 +12,8 @@ namespace DinerMax3000Console
         {
             Menu summerMenu = new Menu();
             summerMenu.Name = "Summer menu";
-            MenuItem mostaciolli = new MenuItem();
-            mostaciolli.Title = "Mostaciolli";
-            mostaciolli.Description = "Noodles, Sauce, Cheese, Oh My!";
-            mostaciolli.Price = 12.50;
-            summerMenu.Items.Add(mostaciolli);
+            summerMenu.AddMenuItem("Mostaciolli", "Noodles, Sauce, Cheese, Oh My!", 12.50);
+            summerMenu.AddMenuItem("Garlic Bread", "Fresh bread, butter, and garlic", 3.95);
         }
     }
 }
