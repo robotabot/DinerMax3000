@@ -19,6 +19,18 @@ namespace DinerMax3000Console
             DrinkMenu outsideDrinks = new DrinkMenu();
             outsideDrinks.Disclaimer = "Take care now";
             outsideDrinks.AddMenuItem("Rum Chata", "Tastes like cinnamon", 3.95);
+
+            Order guestOrder = new Order();
+
+            foreach (MenuItem dish in summerMenu.Items)
+            {
+                guestOrder.Items.Add(dish);
+            }
+
+            foreach (MenuItem drink  in outsideDrinks.Items)
+            {
+                guestOrder.Items.Add(drink);
+            }
         }
     }
 }

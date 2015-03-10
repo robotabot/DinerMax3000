@@ -8,6 +8,6 @@ namespace DinerMax3000Console
 {
     public class Order
     {
-        public  List<MenuItem> Items = new List<MenuItem>();
+        public List<MenuItem> Items = new List<MenuItem>();
     }
 }
