@@ -33,6 +33,16 @@ namespace DinerMax3000Console
             }
 
             Console.WriteLine("The order total is " + guestOrder.Total);
+
+            try
+            {
+                outsideDrinks.AddMenuItem("WhatDrink", "I don't know", 0);
+            }
+            catch(Exception thrownException)
+            {
+                Console.WriteLine(thrownException.Message);
+            }
+
             Console.ReadKey();
         }
     }
