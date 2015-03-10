@@ -10,10 +10,15 @@ namespace DinerMax3000Console
     {
         static void Main(string[] args)
         {
-            Menu summerMenu = new Menu();
+            FoodMenu summerMenu = new FoodMenu();
             summerMenu.Name = "Summer menu";
             summerMenu.AddMenuItem("Mostaciolli", "Noodles, Sauce, Cheese, Oh My!", 12.50);
             summerMenu.AddMenuItem("Garlic Bread", "Fresh bread, butter, and garlic", 3.95);
+            summerMenu.HospitalDirections = "HAHAHAHAHAHAHA";
+
+            DrinkMenu outsideDrinks = new DrinkMenu();
+            outsideDrinks.Disclaimer = "Take care now";
+            outsideDrinks.AddMenuItem("Rum Chata", "Tastes like cinnamon", 3.95);
         }
     }
 }
